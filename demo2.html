@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="bg-dark text-white text-center py-5">
+    <h1 class="display-4">Capture Moments Photography</h1>
+    <p>Your favorite moments, frozen in time.</p>
+  </header>
+
+  <!-- Buttons Section -->
+  <div class="container text-center my-5">
+    <h2>Explore Photography</h2>
+    <p class="lead">Choose your favorite photography category to explore more.</p>
+    
+    <!-- Button with Modal Trigger for Landscape -->
+    <button type="button" class="btn btn-primary m-2">
+      Landscape Photography
+    </button>
+    
+    <!-- Button with Modal Trigger for Portrait -->
+    <button type="button" class="btn btn-secondary m-2">
+      Portrait Photography
+    </button>
+    
+    <!-- Button with Modal Trigger for Wildlife -->
+    <button type="button" class="btn btn-success m-2">
+      Wildlife Photography
+    </button>
+
+    
+
+
+  <!-- Cards Section -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Card 1: Landscape Photography -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image3.jpg" class="card-img-top" alt="Landscape Photography">
+          <div class="card-body">
+            <h5 class="card-title">Landscape Photography</h5>
+            <p class="card-text">Capture the beauty of nature, from majestic mountains to serene lakes.</p>
+            <!-- Button triggers modal -->
+            <button type="button" class="btn btn-primary">
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Portrait Photography -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image1.jpg" class="card-img-top" alt="Portrait Photography">
+          <div class="card-body">
+            <h5 class="card-title">Portrait Photography</h5>
+            <p class="card-text">Capture the essence of individuals and their unique personalities.</p>
+            <!-- Button triggers modal -->
+            <button type="button" class="btn btn-secondary">
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Wildlife Photography -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image2.jpg" class="card-img-top" alt="Wildlife Photography">
+          <div class="card-body">
+            <h5 class="card-title">Wildlife Photography</h5>
+            <p class="card-text">Capture animals in their natural habitat, highlighting nature's beauty.</p>
+            <!-- Button triggers modal -->
+            <button type="button" class="btn btn-success">
+              View More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alerts Section -->
+  <div class="container my-4">
+    <div class="alert alert-primary" role="alert">
+        Get in Touch.
+      </div>
+
+  <!-- Contact Form Section -->
+  <div class="container my-5">
+   
+    <!-- Form with alert -->
+    <form class="mt-2">
+      <div class="mb-2">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+
+  <div class="modal fade" id="landscapeModal" tabindex="-1" aria-labelledby="landscapeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="landscapeModalLabel">Landscape Photography</h5>
+          <button type="button" class="btn-close"></button>
+        </div>
+        <div class="modal-body">
+          Landscape photography captures the beauty of nature, from majestic mountains to serene lakes. Perfect for those who love to explore the outdoors.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Portrait Photography -->
+  <div class="modal fade" id="portraitModal" tabindex="-1" aria-labelledby="portraitModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portraitModalLabel">Portrait Photography</h5>
+          <button type="button" class="btn-close"></button>
+        </div>
+        <div class="modal-body">
+          Portrait photography is all about capturing the essence and personality of people through close-up shots, lighting, and composition.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Wildlife Photography -->
+  <div class="modal fade" id="wildlifeModal" tabindex="-1" aria-labelledby="wildlifeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="wildlifeModalLabel">Wildlife Photography</h5>
+          <button type="button" class="btn-close"></button>
+        </div>
+        <div class="modal-body">
+          Wildlife photography captures animals in their natural habitats. From majestic lions to tiny insects, every shot tells a story of nature.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Capture Moments Photography. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
